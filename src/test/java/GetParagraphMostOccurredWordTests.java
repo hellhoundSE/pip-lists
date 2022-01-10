@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task2 {
+public class GetParagraphMostOccurredWordTests {
 
     @Test
-    public void test21(){
+    public void getParagraphMostOccurredWordCorrect(){
         Main main = GenericTestFactory.getInstance(Main.class);
         List<List<String>> paragraph = new ArrayList<List<String>>();
         List<String> sentense1 = new ArrayList<>();
@@ -15,12 +15,12 @@ public class Task2 {
         sentense1.add("ala");
         sentense1.add("ma");
         sentense1.add("kota");
-        sentense1.add("ala");
-        sentense1.add("ma");
-        sentense1.add("psa");
-        sentense1.add("ala");
-        sentense1.add("lubi");
-        sentense1.add("ryb");
+        sentense2.add("ala");
+        sentense2.add("ma");
+        sentense2.add("psa");
+        sentense3.add("ala");
+        sentense3.add("lubi");
+        sentense3.add("ryb");
 
         paragraph.add(sentense1);
         paragraph.add(sentense2);
@@ -28,25 +28,25 @@ public class Task2 {
 
         String correct = "ala";
 
-        GenericTestFactory.testMethod(main,"method2",correct, new Object[]{paragraph});
+        GenericTestFactory.testMethod(main,"getParagraphMostOccurredWord",correct, new Object[]{paragraph});
     }
 
     @Test
-    public void test22(){
+    public void getParagraphMostOccurredWordCorrect2(){
         Main main = GenericTestFactory.getInstance(Main.class);
-        List<List<String>> paragraph = new ArrayList<List<String>>();
-        List<String> sentense1 = new ArrayList<>();
-        List<String> sentense2 = new ArrayList<>();
-        List<String> sentense3 = new ArrayList<>();
+        ArrayList<ArrayList<String>> paragraph = new ArrayList<ArrayList<String>>();
+        ArrayList<String> sentense1 = new ArrayList<>();
+        ArrayList<String> sentense2 = new ArrayList<>();
+        ArrayList<String> sentense3 = new ArrayList<>();
         sentense1.add("marcin");
         sentense1.add("ma");
-        sentense1.add("psa");
-        sentense1.add("jacek");
-        sentense1.add("ma");
-        sentense1.add("dom");
-        sentense1.add("mateusz");
-        sentense1.add("ma");
-        sentense1.add("wode");
+        sentense2.add("psa");
+        sentense2.add("jacek");
+        sentense2.add("ma");
+        sentense3.add("dom");
+        sentense3.add("mateusz");
+        sentense3.add("ma");
+        sentense3.add("wode");
 
         paragraph.add(sentense1);
         paragraph.add(sentense2);
@@ -54,6 +54,6 @@ public class Task2 {
 
         String correct = "ma";
 
-        GenericTestFactory.testMethod(main,"method2",correct, new Object[]{paragraph});
+        GenericTestFactory.testMethod(main,"getParagraphMostOccurredWord",correct, new Object[]{paragraph});
     }
 }

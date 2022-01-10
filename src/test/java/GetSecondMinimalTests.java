@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task4 {
+public class GetSecondMinimalTests {
 
     @Test
-    public void test41(){
+    public void getSecondMinimalCorrect(){
         Main main = GenericTestFactory.getInstance(Main.class);
         List<List<Integer>> sequence = new ArrayList<List<Integer>>();
         List<Integer> sequence1 = new ArrayList<Integer>();
@@ -26,11 +26,11 @@ public class Task4 {
 
         Integer correct = 10;
 
-        GenericTestFactory.testMethod(main,"method4",correct, new Object[]{sequence});
+        GenericTestFactory.testMethod(main,"getSecondMinimal",correct, new Object[]{sequence});
     }
 
     @Test
-    public void test42(){
+    public void getSecondMinimalCorrect2(){
         Main main = GenericTestFactory.getInstance(Main.class);
         List<List<Integer>> sequence = new ArrayList<List<Integer>>();
         List<Integer> sequence1 = new ArrayList<Integer>();
@@ -52,6 +52,6 @@ public class Task4 {
 
         Integer correct = 13;
 
-        GenericTestFactory.testMethod(main,"method4",correct, new Object[]{sequence});
+        GenericTestFactory.testMethod(main,"getSecondMinimal",correct, new Object[]{sequence});
     }
 }

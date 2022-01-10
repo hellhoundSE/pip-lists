@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 public class Utils {
@@ -14,17 +16,15 @@ public class Utils {
         return true;
     }
 
-    public static boolean equals(Object obj1, Object obj2){
-        if(!Objects.equals(obj1.getClass().getName(), obj2.getClass().getName())){
+    public static boolean listsEquals(List list1,List list2){
+        if(list1.size() != list2.size())
             return false;
+        Collections.sort(list1);
+        Collections.sort(list2);
+        for (int i = 0; i < list1.size(); i++){
+            if(Objects.equals(list1.get(i),list2.get(i)))
+                return false;
         }
-        if(obj1.getClass().isPrimitive()){
-            return Objects.equals(obj1, obj2);
-        }
-        if(obj1.getClass().isArray()){
-            return arrayEquals((Object[])obj1,(Object[])obj2);
-        }
-
-        return Objects.equals(obj1, obj2);
+        return true;
     }
 }

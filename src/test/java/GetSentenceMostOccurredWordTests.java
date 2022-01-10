@@ -5,7 +5,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class GetSentenceMostOccurredWord {
+public class GetSentenceMostOccurredWordTests {
 
     @Test
     public void getSentenceMostOccurredWordCorrect(){

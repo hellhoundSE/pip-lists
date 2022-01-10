@@ -1,4 +1,12 @@
 GenericTestFactory.java
  GenericTestFactory
-TestClass.java
- TestClass
+Utils.java
+ Utils
+GetSecondUniqueTests.java
+ GetSecondUniqueTests
+GetParagraphMostOccurredWordTests.java
+ GetParagraphMostOccurredWordTests
+GetSentenceMostOccurredWordTests.java
+ GetSentenceMostOccurredWordTests
+GetSecondMinimalTests.java
+ GetSecondMinimalTests

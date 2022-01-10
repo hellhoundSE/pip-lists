@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task3 {
+public class GetSecondUniqueTests {
 
     @Test
-    public void test31(){
+    public void getSecondUniqueCorrect(){
         Main main = GenericTestFactory.getInstance(Main.class);
         List<Integer> sequence = new ArrayList<Integer>();
 
@@ -19,11 +19,11 @@ public class Task3 {
 
         Integer correct = 4;
 
-        GenericTestFactory.testMethod(main,"method3",correct, new Object[]{sequence});
+        GenericTestFactory.testMethod(main,"getSecondUnique",correct, new Object[]{sequence});
     }
 
     @Test
-    public void test32(){
+    public void getSecondUniqueCorrect2(){
         Main main = GenericTestFactory.getInstance(Main.class);
         List<Integer> sequence = new ArrayList<Integer>();
 
@@ -36,6 +36,6 @@ public class Task3 {
 
         Integer correct = 33;
 
-        GenericTestFactory.testMethod(main,"method3",correct, new Object[]{sequence});
+        GenericTestFactory.testMethod(main,"getSecondUnique",correct, new Object[]{sequence});
     }
 }
